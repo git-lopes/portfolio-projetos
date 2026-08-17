@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Portal do Projeto | Modernização e Automação da Ação Fiscal SEFAZ/CE</title>
+<style>
+:root{--navy:#163d2d;--blue:#2e7d32;--blue2:#43a047;--sky:#edf7ef;--bg:#ffffff;--white:#fff;--text:#173b2b;--muted:#687d70;--line:#dbe9df;--green:#16885c;--amber:#d99400;--red:#c94141;--shadow:0 10px 30px rgba(16,62,100,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}button{font:inherit}.app{min-height:100vh}.topbar{height:62px;position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line);color:var(--text);display:flex;align-items:center;gap:12px;padding:0 15px;box-shadow:0 4px 18px rgba(0,0,0,.15)}.menuBtn{border:0;background:#edf7ef;color:var(--green);border-radius:10px;width:42px;height:42px;font-size:22px}.brand b{display:block;font-size:15px}.brand small{opacity:.75}.layout{display:flex}.sidebar{position:fixed;z-index:40;top:62px;bottom:0;left:0;width:285px;background:#fff;color:var(--text);border-right:1px solid var(--line);padding:16px 10px;transform:translateX(-102%);transition:.25s;overflow:auto}.sidebar.open{transform:translateX(0)}.navTitle{font-size:11px;text-transform:uppercase;letter-spacing:.13em;opacity:.55;padding:10px 12px}.nav{display:flex;flex-direction:column;gap:5px}.nav button{border:0;text-align:left;background:transparent;color:var(--text);padding:12px;border-radius:10px;cursor:pointer}.nav button:hover,.nav button.active{background:#e8f5e9;color:#1b5e20}.nav button small{display:block;opacity:.65;margin-top:3px}.content{width:100%;max-width:1180px;margin:auto;padding:18px}.page{display:none}.page.active{display:block;animation:fade .18s ease}@keyframes fade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}.hero{background:linear-gradient(135deg,#f4fbf5,#e8f5e9);color:var(--text);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow);margin-bottom:16px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.15em;opacity:.7}.hero h1{font-size:clamp(27px,6vw,45px);line-height:1.06;margin:8px 0}.hero p{margin:0;opacity:.85}.grid{display:grid;gap:14px}.kpis{grid-template-columns:repeat(2,1fr)}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px;box-shadow:var(--shadow)}.card h2,.card h3{margin-top:0}.kpi b{font-size:24px;color:var(--blue)}.kpi small{display:block;color:var(--muted);margin-top:4px}.section{margin:16px 0}.sectionTitle{font-size:20px;margin:0 0 10px}.two{grid-template-columns:1fr}.three{grid-template-columns:1fr}.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #edf3f8}.row:last-child{border:0}.row span{color:var(--muted)}.pill{display:inline-block;border-radius:99px;padding:5px 9px;font-size:11px;font-weight:800;background:var(--sky);color:var(--blue)}.ok{color:var(--green)}.warn{color:var(--amber)}.danger{color:var(--red)}.tableWrap{overflow:auto;-webkit-overflow-scrolling:touch}.table{width:100%;border-collapse:collapse;min-width:720px;font-size:13px}.table th{background:#eef6fc;color:#456176;text-align:left;padding:10px;border-bottom:1px solid var(--line);font-size:11px;text-transform:uppercase}.table td{padding:11px 10px;border-bottom:1px solid #edf3f8;vertical-align:top}.table tr:last-child td{border:0}.timeline{position:relative;padding-left:28px}.timeline:before{content:"";position:absolute;left:8px;top:5px;bottom:5px;width:3px;background:#c9dfef}.tl{position:relative;padding:0 0 20px}.tl:before{content:"";position:absolute;left:-27px;top:4px;width:15px;height:15px;border-radius:50%;background:var(--blue2);border:4px solid #dff1ff}.tl b{display:block}.tl small{color:var(--muted)}.week{font-size:11px;color:var(--blue2);font-weight:800}.bar{height:9px;background:#e8f0f6;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--blue2));border-radius:99px}.callout{border-left:4px solid var(--blue2)}.signature{display:grid;grid-template-columns:1fr;gap:22px;margin-top:28px}.sig{padding-top:35px;border-top:1px solid #8095a7;text-align:center}.mobileOverlay{display:none;position:fixed;inset:62px 0 0;background:rgba(3,16,30,.45);z-index:35}.mobileOverlay.show{display:block}.note{font-size:12px;color:var(--muted)}.riskHigh{border-left:4px solid var(--red)}.riskMed{border-left:4px solid var(--amber)}.footer{text-align:center;color:var(--muted);font-size:11px;padding:30px 10px}
+@media(min-width:800px){.menuBtn{display:flex;align-items:center;justify-content:center}.sidebar{transform:none;top:62px}.content{margin-left:285px;padding:24px 28px;max-width:none;transition:.28s}.sidebar{transition:.28s}.app.menu-collapsed .sidebar{transform:translateX(-100%)}.app.menu-collapsed .content{margin-left:0}.app.menu-collapsed .menuBtn{transform:rotate(180deg)}.kpis{grid-template-columns:repeat(4,1fr)}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.signature{grid-template-columns:1fr 1fr}.mobileOverlay{display:none!important}}
+
+.roadmapTrack{position:relative;margin:26px 0 10px;padding:10px 0}.roadmapTrack:before{content:"";position:absolute;left:4%;right:4%;top:34px;height:6px;border-radius:99px;background:linear-gradient(90deg,#16885c 0 20%,#9bc9a6 20% 100%)}.roadmapNodes{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;position:relative}.roadNode{text-align:center;position:relative}.roadDot{width:22px;height:22px;border-radius:50%;margin:14px auto 12px;border:5px solid #e6f3e9;background:#a9cbb0;position:relative;z-index:2}.roadNode.done .roadDot{background:#16885c}.roadNode.next .roadDot{background:#d99400}.roadNode b{display:block;font-size:12px}.roadNode small{font-size:10px;color:var(--muted)}.phaseBand{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.phase{padding:16px;border-radius:15px;border:1px solid var(--line);background:#fbfefb}.phase strong{display:block;color:var(--green);margin-bottom:6px}.miniChart{height:180px;display:flex;align-items:end;gap:10px;padding:15px 6px 25px;border-bottom:1px solid var(--line)}.miniBar{flex:1;position:relative;background:#dcece0;border-radius:8px 8px 0 0;min-width:20px}.miniBar i{position:absolute;left:50%;transform:translateX(-50%);bottom:-21px;font-style:normal;font-size:9px;color:var(--muted);white-space:nowrap}.miniBar em{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-style:normal;font-size:10px;font-weight:700}.miniBar.done{background:#16885c}.miniBar.current{background:#d99400}.roadLegend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.roadLegend span:before{content:"●";margin-right:5px}.roadLegend .lgDone:before{color:#16885c}.roadLegend .lgNext:before{color:#d99400}.roadLegend .lgPlan:before{color:#a9cbb0}.arrowHint{margin-left:auto;border:0;background:#edf7ef;color:var(--green);border-radius:10px;padding:8px 11px;cursor:pointer;font-weight:800}@media(max-width:799px){.roadmapNodes{grid-template-columns:1fr 1fr}.roadmapTrack:before{display:none}.phaseBand{grid-template-columns:1fr}.roadNode{border:1px solid var(--line);border-radius:12px;padding:8px}.roadDot{margin:4px auto 7px}}
+</style>
+</head>
+<body><div class="app">
+<header class="topbar"><button aria-label="Recolher ou abrir menu" class="menuBtn" id="menuBtn" title="Recolher/abrir menu">‹</button><div class="brand"><b>Modernização da Ação Fiscal | SEFAZ/CE</b><small>Portal de Governança do Projeto</small></div><button class="arrowHint" id="collapseBtn" title="Tela cheia">⇤ Menu</button></header>
+<div class="mobileOverlay" id="overlay"></div>
+<aside class="sidebar" id="sidebar"><div class="navTitle">Navegação</div><nav class="nav">
+<button class="active" data-page="charter">01. Termo de Abertura<small>Autorização, escopo, objetivos e governança</small></button>
+<button data-page="processes">02. Processos &amp; EAP<small>AS-IS, TO-BE, BPMN, Bizagi e entregáveis</small></button>
+<button data-page="schedule">03. Cronograma Macro<small>Nov/2014 a Fev/2018, ondas e caminho crítico</small></button>
+<button data-page="communication">04. Plano de Comunicação<small>Stakeholders, canais, frequência e escalonamento</small></button>
+<button data-page="risks">05. Riscos &amp; Issues<small>Matriz, respostas, owners e contingências</small></button>
+<button data-page="stakeholders">06. Stakeholders &amp; RACI<small>Governança, responsabilidades e decisão</small></button>
+<button data-page="changes">07. Mudanças &amp; CCB<small>Controle integrado de mudanças e decisões</small></button>
+<button data-page="roadmap">08. ROADMAP<small>Jornada visual da transformação da Ação Fiscal</small></button>
+<button data-page="status">09. Status Report<small>SPI, CPI, marcos, saúde e próximos passos</small></button>
+</nav></aside>
+<main class="content">
+<section class="page active" id="charter">
+<div class="hero"><div class="eyebrow">Termo de Abertura do Projeto</div><h1>Modernização e Automação da Ação Fiscal · SEFAZ/CE</h1>
+<p>Projeto tradicional de mapeamento, redesenho e automação dos processos da Ação Fiscal do Estado do Ceará, utilizando BPM/BPMN e Bizagi como base para transformar fluxos AS-IS em processos TO-BE padronizados, rastreáveis e orientados à eficiência.</p></div>
+
+<div class="grid kpis">
+<div class="card kpi"><b>Nov/2014</b><small>Início</small></div>
+<div class="card kpi"><b>Fev/2018</b><small>Conclusão</small></div>
+<div class="card kpi"><b>40 meses</b><small>Duração</small></div>
+<div class="card kpi"><b>Tradicional</b><small>Abordagem preditiva</small></div>
+</div>
+
+<div class="grid two section">
+<div class="card"><h2>Identificação e autoridade</h2>
+<div class="row"><span>Organização</span><strong>SEFAZ/CE</strong></div>
+<div class="row"><span>Projeto</span><strong>Modernização da Ação Fiscal</strong></div>
+<div class="row"><span>Patrocinador</span><strong>Auler</strong></div>
+<div class="row"><span>Gerente do Projeto</span><strong>Clenival Lopes</strong></div>
+<div class="row"><span>Período</span><strong>Nov/2014 → Fev/2018</strong></div>
+<div class="row"><span>Abordagem</span><strong>Tradicional / PMBOK</strong></div>
+<div class="row"><span>Modelagem</span><strong>BPMN · Bizagi</strong></div>
+</div>
+<div class="card callout"><h2>Business Need</h2>
+<p>A Ação Fiscal envolve processos críticos, regras tributárias, múltiplos atores e forte necessidade de rastreabilidade. O projeto estruturou uma visão ponta a ponta dos processos, eliminando ambiguidades, identificando gargalos e preparando fluxos para automação e integração com sistemas legados.</p>
+<h3>Objetivo executivo</h3><p>Mapear, redesenhar, padronizar e automatizar os processos da Ação Fiscal, aumentando controle, rastreabilidade, eficiência operacional e governança.</p></div></div>
+
+<div class="section"><h2 class="sectionTitle">Escopo de alto nível</h2><div class="grid three">
+<div class="card"><h3>Mapear</h3><p>Levantamento com áreas fiscais, entrevistas, workshops, inventário de processos, atores, documentos, regras, sistemas e exceções.</p></div>
+<div class="card"><h3>Redesenhar</h3><p>Modelagem AS-IS/TO-BE em BPMN, análise de gargalos, padronização, definição de controles, SLAs e oportunidades de automação.</p></div>
+<div class="card"><h3>Automatizar</h3><p>Orquestração dos fluxos no Bizagi, integração com sistemas legados, testes, homologação, implantação por ondas e estabilização.</p></div>
+</div></div>
+
+<div class="section"><h2 class="sectionTitle">Entregáveis principais</h2><div class="grid three">
+<div class="card"><h3>Arquitetura de Processos</h3><p>Mapa da cadeia da Ação Fiscal, catálogo de processos, subprocessos, eventos, papéis e regras de negócio.</p></div>
+<div class="card"><h3>Modelos BPMN</h3><p>Diagramas AS-IS e TO-BE versionados, aprovados e vinculados aos requisitos de automação.</p></div>
+<div class="card"><h3>Processos Automatizados</h3><p>Workflows Bizagi, formulários, regras, filas, notificações, integrações, trilhas de auditoria e indicadores.</p></div>
+</div></div>
+
+<div class="section"><h2 class="sectionTitle">Macrocronograma do TAP</h2>
+<div class="card tableWrap"><table class="table"><thead><tr><th>Período</th><th>Fase</th><th>Entregas / Gate</th></tr></thead><tbody>
+<tr><td>Nov/14–Fev/15</td><td>Mobilização</td><td>TAP, governança, stakeholders, metodologia BPM e plano mestre</td></tr>
+<tr><td>Mar–Ago/15</td><td>Descoberta AS-IS</td><td>Inventário, entrevistas, workshops e modelagem dos processos atuais</td></tr>
+<tr><td>Set/15–Fev/16</td><td>Desenho TO-BE</td><td>Redesenho, padronização, regras, controles, SLAs e aprovação das áreas</td></tr>
+<tr><td>Mar–Ago/16</td><td>Automação · Onda 1</td><td>Configuração Bizagi, formulários, workflows e primeiras integrações</td></tr>
+<tr><td>Set/16–Fev/17</td><td>Automação · Onda 2</td><td>Ampliação dos processos, integrações legadas e trilhas de auditoria</td></tr>
+<tr><td>Mar–Ago/17</td><td>Testes &amp; Homologação</td><td>SIT, UAT, ajustes, indicadores e preparação operacional</td></tr>
+<tr><td>Set–Dez/17</td><td>Implantação</td><td>Rollout, treinamento, gestão da mudança e acompanhamento assistido</td></tr>
+<tr><td>Jan–Fev/18</td><td>Estabilização</td><td>Hypercare, pendências, aceite e encerramento</td></tr>
+</tbody></table></div></div>
+
+<div class="grid two section"><div class="card"><h2>Premissas</h2><ul>
+<li>Disponibilidade de auditores, gestores e especialistas fiscais para workshops.</li>
+<li>Acesso às regras de negócio e aos sistemas legados envolvidos.</li>
+<li>Validação formal dos modelos AS-IS e TO-BE pelos donos dos processos.</li>
+<li>Implantação progressiva para reduzir risco operacional.</li>
+</ul></div><div class="card"><h2>Restrições</h2><ul>
+<li>Processos fiscais críticos não poderiam sofrer interrupções relevantes.</li>
+<li>Dependência de sistemas legados e integrações existentes.</li>
+<li>Alterações de regra fiscal poderiam gerar mudanças de escopo.</li>
+<li>Necessidade de rastreabilidade e controle das decisões.</li>
+</ul></div></div>
+
+<div class="section"><h2 class="sectionTitle">Indicadores de gestão</h2><div class="grid kpis">
+<div class="card kpi"><b>SPI</b><small>EV ÷ PV · desempenho de prazo</small></div>
+<div class="card kpi"><b>CPI</b><small>EV ÷ AC · desempenho de custo</small></div>
+<div class="card kpi"><b>% Processos</b><small>Mapeados / aprovados / automatizados</small></div>
+<div class="card kpi"><b>Defeitos</b><small>Críticos, altos e backlog de correções</small></div>
+</div></div>
+</section>
+
+<section class="page" id="processes"><div class="hero"><div class="eyebrow">Escopo &amp; EAP</div><h1>Da descoberta do processo à automação</h1><p>A estrutura de trabalho conecta gestão tradicional do projeto com BPM/BPMN e execução no Bizagi.</p></div>
+<div class="grid three">
+<div class="card"><h3>1 · Descoberta</h3><p>Planejar workshops, identificar owners, levantar documentos, sistemas, eventos, regras, exceções e pontos de controle.</p></div>
+<div class="card"><h3>2 · AS-IS</h3><p>Modelar o processo atual em BPMN, validar handoffs, tempos, retrabalho, gargalos, riscos e controles existentes.</p></div>
+<div class="card"><h3>3 · Análise</h3><p>Identificar desperdícios, duplicidades, esperas, atividades manuais, riscos de conformidade e oportunidades de integração.</p></div>
+<div class="card"><h3>4 · TO-BE</h3><p>Redesenhar o processo futuro, simplificar fluxos, definir regras, papéis, SLAs, indicadores e requisitos.</p></div>
+<div class="card"><h3>5 · Automação Bizagi</h3><p>Construir workflows, formulários, regras, filas, notificações, integrações e trilha de auditoria.</p></div>
+<div class="card"><h3>6 · Validar &amp; Implantar</h3><p>SIT, UAT, treinamento, rollout por ondas, suporte assistido, indicadores e aceite.</p></div>
+</div>
+<div class="section"><h2 class="sectionTitle">EAP executiva</h2><div class="card tableWrap"><table class="table"><thead><tr><th>Pacote</th><th>Principais atividades</th><th>Saída</th></tr></thead><tbody>
+<tr><td>1. Gestão do Projeto</td><td>TAP, planos, baseline, status, riscos, mudanças, qualidade</td><td>Governança e controle</td></tr>
+<tr><td>2. Arquitetura de Processos</td><td>Inventário, cadeia de valor, priorização e owners</td><td>Mapa da Ação Fiscal</td></tr>
+<tr><td>3. Modelagem AS-IS</td><td>Entrevistas, workshops e BPMN</td><td>Processos atuais aprovados</td></tr>
+<tr><td>4. Desenho TO-BE</td><td>Simplificação, regras, controles e SLAs</td><td>Processos futuros aprovados</td></tr>
+<tr><td>5. Automação</td><td>Bizagi, formulários, regras e integrações</td><td>Workflows executáveis</td></tr>
+<tr><td>6. Qualidade</td><td>Testes unitários, SIT, UAT e evidências</td><td>Aceite técnico/negócio</td></tr>
+<tr><td>7. Implantação</td><td>Treinamento, rollout, hypercare</td><td>Operação estabilizada</td></tr>
+</tbody></table></div></div></section>
+
+<section class="page" id="schedule"><div class="hero"><div class="eyebrow">Planejamento</div><h1>Cronograma Macro · Nov/2014 → Fev/2018</h1><p>Projeto de longa duração estruturado em fases e ondas de processos para permitir validação progressiva e reduzir risco.</p></div>
+<div class="card"><div class="timeline">
+<div class="tl"><span class="week">NOV/14–FEV/15</span><b>Mobilização</b><small>TAP, governança, plano mestre e arquitetura inicial.</small></div>
+<div class="tl"><span class="week">MAR–AGO/15</span><b>AS-IS</b><small>Levantamento e modelagem da situação atual.</small></div>
+<div class="tl"><span class="week">SET/15–FEV/16</span><b>TO-BE</b><small>Redesenho, padronização e validação.</small></div>
+<div class="tl"><span class="week">MAR–AGO/16</span><b>Automação Onda 1</b><small>Bizagi, formulários, regras e integrações.</small></div>
+<div class="tl"><span class="week">SET/16–FEV/17</span><b>Automação Onda 2</b><small>Expansão do escopo e integração legada.</small></div>
+<div class="tl"><span class="week">MAR–AGO/17</span><b>SIT &amp; UAT</b><small>Testes integrados, homologação e ajustes.</small></div>
+<div class="tl"><span class="week">SET–DEZ/17</span><b>Rollout</b><small>Treinamento, implantação e gestão da mudança.</small></div>
+<div class="tl"><span class="week">JAN–FEV/18</span><b>Estabilização</b><small>Hypercare, aceite e encerramento.</small></div>
+</div></div>
+<div class="section"><h2 class="sectionTitle">Caminho crítico de referência</h2><div class="card tableWrap"><table class="table"><thead><tr><th>ID</th><th>Atividade</th><th>Dependência</th><th>Folga</th><th>Status</th></tr></thead><tbody>
+<tr><td>CC01</td><td>Inventariar e priorizar processos da Ação Fiscal</td><td>—</td><td>0</td><td class="danger"><b>Crítica</b></td></tr>
+<tr><td>CC02</td><td>Validar modelos AS-IS</td><td>CC01</td><td>0</td><td class="danger"><b>Crítica</b></td></tr>
+<tr><td>CC03</td><td>Aprovar desenho TO-BE</td><td>CC02</td><td>0</td><td class="danger"><b>Crítica</b></td></tr>
+<tr><td>CC04</td><td>Construir workflows e integrações Bizagi</td><td>CC03</td><td>0</td><td class="danger"><b>Crítica</b></td></tr>
+<tr><td>CC05</td><td>Concluir SIT</td><td>CC04</td><td>0</td><td class="danger"><b>Crítica</b></td></tr>
+<tr><td>CC06</td><td>Homologar UAT</td><td>CC05</td><td>0</td><td class="danger"><b>Crítica</b></td></tr>
+<tr><td>CC07</td><td>Rollout e aceite</td><td>CC06</td><td>0</td><td class="danger"><b>Crítica</b></td></tr>
+</tbody></table></div></div></section>
+
+<section class="page" id="communication"><div class="hero"><div class="eyebrow">Plano de Comunicação</div><h1>Comunicação orientada à decisão</h1><p>Estrutura formal para manter patrocinador, gestores fiscais, donos de processo, TI e equipe alinhados durante as ondas do projeto.</p></div>
+<div class="grid three"><div class="card"><h3>Interativa</h3><p>Workshops AS-IS/TO-BE, reuniões de projeto, comitês, sessões de homologação e war rooms.</p></div><div class="card"><h3>Push</h3><p>Status report, atas, alertas de risco, decisões, solicitações de aprovação e comunicados.</p></div><div class="card"><h3>Pull</h3><p>Repositório de modelos BPMN, cronograma, matriz de riscos, documentação e indicadores.</p></div></div>
+<div class="section"><div class="card tableWrap"><table class="table"><thead><tr><th>Comunicação</th><th>Público</th><th>Frequência</th><th>Conteúdo</th><th>Responsável</th></tr></thead><tbody>
+<tr><td>Comitê Executivo</td><td>Patrocinador + gestores</td><td>Mensal / exceção</td><td>SPI/CPI, marcos, riscos, mudanças e decisões</td><td>GP</td></tr>
+<tr><td>Status Report</td><td>Sponsor, gestores, PMO</td><td>Semanal</td><td>Progresso, forecast, riscos, issues e próximos marcos</td><td>GP</td></tr>
+<tr><td>Workshop BPM</td><td>Owners + especialistas</td><td>Por processo</td><td>AS-IS, TO-BE, regras, exceções e aceite</td><td>GP / Analista BPM</td></tr>
+<tr><td>Reunião Técnica</td><td>TI + Bizagi + integrações</td><td>Semanal</td><td>Build, interfaces, defeitos e dependências</td><td>Líder Técnico</td></tr>
+<tr><td>War Room</td><td>Negócio + TI</td><td>Diária em testes/rollout</td><td>Bloqueios, defeitos críticos e decisão rápida</td><td>GP</td></tr>
+</tbody></table></div></div></section>
+
+<section class="page" id="risks"><div class="hero"><div class="eyebrow">Riscos &amp; Issues</div><h1>Matriz de Riscos do Projeto</h1><p>Riscos típicos de transformação de processos fiscais, automação BPM e integração com legado.</p></div>
+<div class="card tableWrap"><table class="table"><thead><tr><th>ID</th><th>Risco</th><th>Prob.</th><th>Impacto</th><th>Nível</th><th>Resposta</th><th>Owner</th></tr></thead><tbody>
+<tr><td>R01</td><td>Complexidade e variação das regras fiscais</td><td>Alta</td><td>Alta</td><td class="danger"><b>Crítico</b></td><td>Workshops, validação formal e rastreabilidade de regras</td><td>Negócio/GP</td></tr>
+<tr><td>R02</td><td>Baixa disponibilidade de especialistas</td><td>Média</td><td>Alta</td><td class="danger"><b>Alto</b></td><td>Agenda executiva e owners substitutos</td><td>Sponsor</td></tr>
+<tr><td>R03</td><td>Integração com sistemas legados</td><td>Alta</td><td>Alta</td><td class="danger"><b>Crítico</b></td><td>Mapeamento de interfaces, mocks e SIT antecipado</td><td>TI</td></tr>
+<tr><td>R04</td><td>Scope creep por novas regras/necessidades</td><td>Média</td><td>Alta</td><td class="warn"><b>Alto</b></td><td>Baseline + Change Request + CCB</td><td>GP</td></tr>
+<tr><td>R05</td><td>Resistência à mudança operacional</td><td>Média</td><td>Média</td><td class="warn"><b>Médio</b></td><td>Key users, comunicação, treinamento e implantação por ondas</td><td>Gestores</td></tr>
+<tr><td>R06</td><td>Defeitos em processo crítico</td><td>Baixa</td><td>Alta</td><td class="warn"><b>Alto</b></td><td>SIT/UAT, evidências e plano de contingência</td><td>QA/TI</td></tr>
+</tbody></table></div></section>
+
+<section class="page" id="stakeholders"><div class="hero"><div class="eyebrow">Governança &amp; RACI</div><h1>Quem decide, executa, valida e é informado</h1><p>Governança executiva combinada com owners de processos e especialistas fiscais.</p></div>
+<div class="grid two"><div class="card"><h2>Estrutura</h2><div class="row"><span>Patrocinador</span><strong>Auler</strong></div><div class="row"><span>Gerente do Projeto</span><strong>Clenival Lopes</strong></div><div class="row"><span>CCB</span><strong>Sponsor + GP + Negócio + TI</strong></div><div class="row"><span>Owners</span><strong>Gestores da Ação Fiscal</strong></div><div class="row"><span>Execução</span><strong>BPM/Bizagi + TI + especialistas</strong></div></div>
+<div class="card"><h2>Estratégia de engajamento</h2><p><span class="pill">Gerenciar de perto</span> Sponsor, gestores fiscais, TI e owners.</p><p><span class="pill">Manter satisfeitos</span> Lideranças com alto poder e menor atuação diária.</p><p><span class="pill">Manter informados</span> Usuários impactados, suporte e áreas relacionadas.</p></div></div>
+<div class="section"><div class="card tableWrap"><table class="table"><thead><tr><th>Entregável</th><th>Sponsor</th><th>GP</th><th>Owner Fiscal</th><th>TI/Bizagi</th><th>Key Users</th></tr></thead><tbody>
+<tr><td>TAP / baseline</td><td>A</td><td>R</td><td>C</td><td>C</td><td>I</td></tr>
+<tr><td>AS-IS</td><td>I</td><td>A</td><td>R</td><td>C</td><td>C</td></tr>
+<tr><td>TO-BE</td><td>I</td><td>A</td><td>R</td><td>C</td><td>C</td></tr>
+<tr><td>Automação Bizagi</td><td>I</td><td>A</td><td>C</td><td>R</td><td>C</td></tr>
+<tr><td>UAT</td><td>I</td><td>A</td><td>R</td><td>C</td><td>R</td></tr>
+<tr><td>Go-live / Rollout</td><td>A</td><td>R</td><td>C</td><td>R</td><td>C</td></tr>
+</tbody></table></div><p class="note">R = Responsible · A = Accountable · C = Consulted · I = Informed.</p></div></section>
+
+<section class="page" id="changes"><div class="hero"><div class="eyebrow">Controle Integrado</div><h1>Mudanças, Decisões &amp; CCB</h1><p>Em um projeto de 40 meses, controlar mudanças de regras, integrações e escopo é essencial para preservar as baselines.</p></div>
+<div class="grid three">
+<div class="card"><h3>1 · Solicitar</h3><p>Registrar CR com origem, justificativa, benefício e urgência.</p></div>
+<div class="card"><h3>2 · Analisar</h3><p>Avaliar impacto em escopo, prazo, custo, arquitetura, qualidade e risco.</p></div>
+<div class="card"><h3>3 · CCB</h3><p>Patrocinador, GP, negócio e TI aprovam, rejeitam ou postergam.</p></div>
+<div class="card"><h3>4 · Rebaseline</h3><p>Atualizar cronograma, orçamento e documentos quando aprovado.</p></div>
+<div class="card"><h3>5 · Comunicar</h3><p>Registrar decisão e atualizar todos os stakeholders afetados.</p></div>
+<div class="card"><h3>6 · Verificar</h3><p>Confirmar implementação e efeitos da mudança.</p></div>
+</div></section>
+
+<section class="page" id="roadmap"><div class="hero"><div class="eyebrow">ROADMAP EXECUTIVO</div><h1>Transformação da Ação Fiscal</h1><p>Uma jornada de descoberta, redesenho, automação, validação e adoção ao longo de 40 meses.</p></div>
+<div class="grid kpis"><div class="card kpi"><b>40 meses</b><small>Nov/14 → Fev/18</small></div><div class="card kpi"><b>8 gates</b><small>Marcos executivos</small></div><div class="card kpi"><b>BPMN</b><small>AS-IS → TO-BE</small></div><div class="card kpi"><b>Bizagi</b><small>Automação</small></div></div>
+<div class="section card"><h2>Jornada</h2><div class="roadmapTrack"><div class="roadmapNodes">
+<div class="roadNode done"><div class="roadDot"></div><b>Mobilizar</b><small>Nov/14</small></div>
+<div class="roadNode done"><div class="roadDot"></div><b>Inventariar</b><small>2015</small></div>
+<div class="roadNode done"><div class="roadDot"></div><b>AS-IS</b><small>2015</small></div>
+<div class="roadNode done"><div class="roadDot"></div><b>TO-BE</b><small>2015/16</small></div>
+<div class="roadNode done"><div class="roadDot"></div><b>Automatizar</b><small>2016/17</small></div>
+<div class="roadNode done"><div class="roadDot"></div><b>Homologar</b><small>2017</small></div>
+<div class="roadNode done"><div class="roadDot"></div><b>Rollout</b><small>2017</small></div>
+<div class="roadNode done"><div class="roadDot"></div><b>Encerrar</b><small>Fev/18</small></div>
+</div></div></div>
+<div class="section"><h2 class="sectionTitle">Fluxo de transformação</h2><div class="phaseBand">
+<div class="phase"><strong>01 · ENTENDER</strong><p>Inventário, entrevistas, workshops e AS-IS.</p><span class="pill">Gate: AS-IS aprovado</span></div>
+<div class="phase"><strong>02 · REDESENHAR</strong><p>TO-BE, regras, controles, SLAs e requisitos.</p><span class="pill">Gate: TO-BE aprovado</span></div>
+<div class="phase"><strong>03 · AUTOMATIZAR</strong><p>Bizagi, formulários, regras e integrações.</p><span class="pill">Gate: build aprovado</span></div>
+<div class="phase"><strong>04 · VALIDAR</strong><p>SIT, UAT, evidências e correções.</p><span class="pill">Gate: aceite</span></div>
+<div class="phase"><strong>05 · ADOTAR</strong><p>Treinamento, rollout, hypercare e encerramento.</p><span class="pill">Gate: estabilização</span></div>
+</div></div></section>
+
+<section class="page" id="status"><div class="hero"><div class="eyebrow">Status Report Executivo</div><h1>Saúde do Projeto · visão histórica demonstrativa</h1><p>Painel no padrão tradicional com EVM, marcos, riscos, progresso e próximos passos. Os valores numéricos abaixo são ilustrativos para demonstrar o modelo de gestão.</p></div>
+<div class="grid kpis"><div class="card kpi"><b>72%</b><small>Progresso ilustrativo</small></div><div class="card kpi"><b>1,01</b><small>SPI · no prazo</small></div><div class="card kpi"><b>1,03</b><small>CPI · no custo</small></div><div class="card kpi"><b class="ok">● VERDE</b><small>Status ilustrativo</small></div></div>
+<div class="grid two section"><div class="card"><h2>EVM</h2><div class="row"><span>PV · Planned Value</span><strong>71%</strong></div><div class="bar"><i style="width:71%"></i></div><div class="row"><span>EV · Earned Value</span><strong>72%</strong></div><div class="bar"><i style="width:72%"></i></div><div class="row"><span>SPI</span><strong>EV / PV = 1,01</strong></div><div class="row"><span>CPI</span><strong>EV / AC = 1,03</strong></div><p class="note">Métricas demonstrativas: não representam números históricos documentados.</p></div>
+<div class="card"><h2>Indicadores de transformação</h2><div class="row"><span>Processos inventariados</span><strong>100%</strong></div><div class="row"><span>AS-IS</span><strong>Concluído</strong></div><div class="row"><span>TO-BE</span><strong>Concluído</strong></div><div class="row"><span>Automação</span><strong>Em ondas</strong></div><div class="row"><span>Qualidade</span><strong>SIT + UAT</strong></div></div></div>
+<div class="section"><h2 class="sectionTitle">Marcos</h2><div class="card tableWrap"><table class="table"><thead><tr><th>Status</th><th>Marco</th><th>Período</th><th>Situação</th></tr></thead><tbody>
+<tr><td class="ok">●</td><td>TAP e governança</td><td>2014/15</td><td><b>Concluído</b></td></tr>
+<tr><td class="ok">●</td><td>Inventário e AS-IS</td><td>2015</td><td><b>Concluído</b></td></tr>
+<tr><td class="ok">●</td><td>TO-BE aprovado</td><td>2015/16</td><td><b>Concluído</b></td></tr>
+<tr><td class="ok">●</td><td>Automação Onda 1</td><td>2016</td><td><b>Concluído</b></td></tr>
+<tr><td class="ok">●</td><td>Automação Onda 2</td><td>2016/17</td><td><b>Concluído</b></td></tr>
+<tr><td class="ok">●</td><td>SIT/UAT</td><td>2017</td><td><b>Concluído</b></td></tr>
+<tr><td class="ok">●</td><td>Rollout</td><td>2017</td><td><b>Concluído</b></td></tr>
+<tr><td class="ok">●</td><td>Estabilização e encerramento</td><td>Fev/2018</td><td><b>Concluído</b></td></tr>
+</tbody></table></div></div>
+<div class="section"><h2 class="sectionTitle">Leitura executiva para entrevista</h2><div class="grid three">
+<div class="card"><h3>Desafio</h3><p>Transformar processos fiscais complexos, com múltiplas regras, atores e dependências de legado.</p></div>
+<div class="card"><h3>Gestão</h3><p>Abordagem tradicional, baseline, cronograma, riscos, RACI, comunicação, CCB, EVM e implantação por ondas.</p></div>
+<div class="card"><h3>Entrega</h3><p>Mapeamento AS-IS/TO-BE, padronização, automação BPM/Bizagi, integrações, homologação e rollout.</p></div>
+</div></div></section>
+<div class="footer">Portal do Projeto · Modernização e Automação da Ação Fiscal · SEFAZ/CE · Portfólio Clenival Lopes</div>
+</main></div>
+<script>
+const app=document.querySelector('.app'),sidebar=document.getElementById('sidebar'),overlay=document.getElementById('overlay'),menuBtn=document.getElementById('menuBtn'),collapseBtn=document.getElementById('collapseBtn');
+function toggleMenu(){if(window.innerWidth<800){sidebar.classList.toggle('open');overlay.classList.toggle('show');}else{app.classList.toggle('menu-collapsed');collapseBtn.textContent=app.classList.contains('menu-collapsed')?'⇥ Abrir menu':'⇤ Menu';menuBtn.textContent=app.classList.contains('menu-collapsed')?'›':'‹';}}
+menuBtn.addEventListener('click',toggleMenu);collapseBtn.addEventListener('click',toggleMenu);
+overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show')});
+document.querySelectorAll('.nav button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(btn.dataset.page).classList.add('active');if(window.innerWidth<800){sidebar.classList.remove('open');overlay.classList.remove('show')}window.scrollTo({top:0,behavior:'smooth'});}));
+</script><script>function health(spi,cpi){if(spi>=1&&cpi>=1)return {label:'NO PRAZO / NO CUSTO',cls:'ok',dot:'●'};if(spi>=0.95&&cpi>=0.95)return {label:'ATENÇÃO',cls:'warn',dot:'●'};return {label:'ATRASO / FORA DO CUSTO',cls:'danger',dot:'●'};} window.projectHealth=health;</script></body></html>
