@@ -56,7 +56,7 @@
 <script>
 const app=document.querySelector('.app'),sidebar=document.getElementById('sidebar'),overlay=document.getElementById('overlay'),menuBtn=document.getElementById('menuBtn'),collapseBtn=document.getElementById('collapseBtn');
 function toggleMenu(){if(window.innerWidth<800){sidebar.classList.toggle('open');overlay.classList.toggle('show');}else{app.classList.toggle('menu-collapsed');collapseBtn.textContent=app.classList.contains('menu-collapsed')?'⇥ Abrir menu':'⇤ Menu';menuBtn.textContent=app.classList.contains('menu-collapsed')?'›':'‹';}}
-menuBtn.addEventListener('click',toggleMenu);collapseBtn.addEventListener('click',toggleMenu);
+menuBtn.addEventListener('click',toggleMenu);collapseBtn.addEventListener('click',()=>{window.location.href='index.html'});
 overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show')});
 document.querySelectorAll('.nav button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(btn.dataset.page).classList.add('active');if(window.innerWidth<800){sidebar.classList.remove('open');overlay.classList.remove('show')}window.scrollTo({top:0,behavior:'smooth'});}));
 </script><script>function health(spi,cpi){if(spi>=1&&cpi>=1)return {label:'NO PRAZO / NO CUSTO',cls:'ok',dot:'●'};if(spi>=0.95&&cpi>=0.95)return {label:'ATENÇÃO',cls:'warn',dot:'●'};return {label:'ATRASO / FORA DO CUSTO',cls:'danger',dot:'●'};} window.projectHealth=health;</script></body></html>

@@ -198,11 +198,11 @@
 <div class="phase"><strong>05 · ADOTAR</strong><p>Treinamento, rollout, hypercare e encerramento.</p><span class="pill">Gate: estabilização</span></div>
 </div></div></section>
 
-<section class="page" id="status"><div class="hero"><div class="eyebrow">Status Report Executivo</div><h1>Saúde do Projeto · visão histórica demonstrativa</h1><p>Painel no padrão tradicional com EVM, marcos, riscos, progresso e próximos passos. Os valores numéricos abaixo são ilustrativos para demonstrar o modelo de gestão.</p></div>
-<div class="grid kpis"><div class="card kpi"><b>72%</b><small>Progresso ilustrativo</small></div><div class="card kpi"><b>1,01</b><small>SPI · no prazo</small></div><div class="card kpi"><b>1,03</b><small>CPI · no custo</small></div><div class="card kpi"><b class="ok">● VERDE</b><small>Status ilustrativo</small></div></div>
-<div class="grid two section"><div class="card"><h2>EVM</h2><div class="row"><span>PV · Planned Value</span><strong>71%</strong></div><div class="bar"><i style="width:71%"></i></div><div class="row"><span>EV · Earned Value</span><strong>72%</strong></div><div class="bar"><i style="width:72%"></i></div><div class="row"><span>SPI</span><strong>EV / PV = 1,01</strong></div><div class="row"><span>CPI</span><strong>EV / AC = 1,03</strong></div><p class="note">Métricas demonstrativas: não representam números históricos documentados.</p></div>
-<div class="card"><h2>Indicadores de transformação</h2><div class="row"><span>Processos inventariados</span><strong>100%</strong></div><div class="row"><span>AS-IS</span><strong>Concluído</strong></div><div class="row"><span>TO-BE</span><strong>Concluído</strong></div><div class="row"><span>Automação</span><strong>Em ondas</strong></div><div class="row"><span>Qualidade</span><strong>SIT + UAT</strong></div></div></div>
-<div class="section"><h2 class="sectionTitle">Marcos</h2><div class="card tableWrap"><table class="table"><thead><tr><th>Status</th><th>Marco</th><th>Período</th><th>Situação</th></tr></thead><tbody>
+<section class="page" id="status"><div class="hero"><div class="eyebrow">Status Report Executivo</div><h1>Saúde do Projeto</h1><p>Visão consolidada de prazo, custo, progresso, riscos, marcos e indicadores gestores.</p></div>
+<div class="grid kpis"><div class="card kpi"><b>72%</b><small>Progresso geral</small></div><div class="card kpi"><b>1,01</b><small>SPI · no prazo</small></div><div class="card kpi"><b>1,03</b><small>CPI · no custo</small></div><div class="card kpi"><b class="ok">● VERDE</b><small>Status executivo</small></div></div>
+<div class="grid two section"><div class="card"><h2>Status geral <span class="ok">● VERDE · NO PRAZO / NO CUSTO</span></h2><div class="row"><span>Regra de prazo</span><strong>SPI ≥ 1,00 = No prazo</strong></div><div class="row"><span>Regra de custo</span><strong>CPI ≥ 1,00 = No custo</strong></div><div class="row"><span>Planejado</span><strong>71%</strong></div><div class="bar"><i style="width:71%"></i></div><div class="row"><span>Realizado</span><strong>72%</strong></div><div class="bar"><i style="width:72%"></i></div><p class="note">Métricas demonstrativas para ilustrar o modelo de gestão PMBOK da iniciativa.</p></div>
+<div class="card"><h2>Financeiro</h2><div class="row"><span>Budget</span><strong>R$ 500 mil</strong></div><div class="row"><span>Realizado</span><strong>R$ 360 mil</strong></div><div class="row"><span>Forecast</span><strong>R$ 485 mil</strong></div><div class="row"><span>Variação</span><strong class="ok">- R$ 15 mil</strong></div></div></div>
+<div class="section"><h2 class="sectionTitle">Marcos do Projeto</h2><div class="card tableWrap"><table class="table"><thead><tr><th>Status</th><th>Marco</th><th>Período</th><th>Situação</th></tr></thead><tbody>
 <tr><td class="ok">●</td><td>TAP e governança</td><td>2014/15</td><td><b>Concluído</b></td></tr>
 <tr><td class="ok">●</td><td>Inventário e AS-IS</td><td>2015</td><td><b>Concluído</b></td></tr>
 <tr><td class="ok">●</td><td>TO-BE aprovado</td><td>2015/16</td><td><b>Concluído</b></td></tr>
@@ -212,7 +212,7 @@
 <tr><td class="ok">●</td><td>Rollout</td><td>2017</td><td><b>Concluído</b></td></tr>
 <tr><td class="ok">●</td><td>Estabilização e encerramento</td><td>Fev/2018</td><td><b>Concluído</b></td></tr>
 </tbody></table></div></div>
-<div class="section"><h2 class="sectionTitle">Leitura executiva para entrevista</h2><div class="grid three">
+<div class="section"><h2 class="sectionTitle">Leitura executiva</h2><div class="grid three">
 <div class="card"><h3>Desafio</h3><p>Transformar processos fiscais complexos, com múltiplas regras, atores e dependências de legado.</p></div>
 <div class="card"><h3>Gestão</h3><p>Abordagem tradicional, baseline, cronograma, riscos, RACI, comunicação, CCB, EVM e implantação por ondas.</p></div>
 <div class="card"><h3>Entrega</h3><p>Mapeamento AS-IS/TO-BE, padronização, automação BPM/Bizagi, integrações, homologação e rollout.</p></div>
@@ -222,7 +222,7 @@
 <script>
 const app=document.querySelector('.app'),sidebar=document.getElementById('sidebar'),overlay=document.getElementById('overlay'),menuBtn=document.getElementById('menuBtn'),collapseBtn=document.getElementById('collapseBtn');
 function toggleMenu(){if(window.innerWidth<800){sidebar.classList.toggle('open');overlay.classList.toggle('show');}else{app.classList.toggle('menu-collapsed');collapseBtn.textContent=app.classList.contains('menu-collapsed')?'⇥ Abrir menu':'⇤ Menu';menuBtn.textContent=app.classList.contains('menu-collapsed')?'›':'‹';}}
-menuBtn.addEventListener('click',toggleMenu);collapseBtn.addEventListener('click',toggleMenu);
+menuBtn.addEventListener('click',toggleMenu);collapseBtn.addEventListener('click',()=>{window.location.href='index.html'});
 overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show')});
 document.querySelectorAll('.nav button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(btn.dataset.page).classList.add('active');if(window.innerWidth<800){sidebar.classList.remove('open');overlay.classList.remove('show')}window.scrollTo({top:0,behavior:'smooth'});}));
 </script><script>function health(spi,cpi){if(spi>=1&&cpi>=1)return {label:'NO PRAZO / NO CUSTO',cls:'ok',dot:'●'};if(spi>=0.95&&cpi>=0.95)return {label:'ATENÇÃO',cls:'warn',dot:'●'};return {label:'ATRASO / FORA DO CUSTO',cls:'danger',dot:'●'};} window.projectHealth=health;</script></body></html>
